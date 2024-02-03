@@ -18,6 +18,7 @@ nav {
 
 nav h1 {
     font-size: 2em;
+    padding-left: 10px;
 }
 
 nav div {
@@ -102,7 +103,7 @@ body {
 }
 
 div {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
   
 label {
@@ -112,7 +113,13 @@ label {
   
 input[type="text"], input[type="number"], select {
     width: 300px;
-    padding: 5px;
+    padding: 10px;
+}
+
+textarea[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-family: Arial;
 }
   
 button {
@@ -153,6 +160,13 @@ h2 {
 }  
 
 .container {
+    height: calc(100% - 74px);    
+    display: flex;flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-left {
     width: 40%;
     height: calc(100% - 74px);
     margin: 0 50px;
@@ -162,14 +176,25 @@ h2 {
     background: rgba(42,86,94, .3) 
 }
 
-.title {
-    font-size: 2em;
+.container-right {
+    width: 40%;
+    height: calc(100% - 74px);
+    margin: 0 50px;
     padding: 50px;
-    width: 75%
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(42,86,94, .3) 
+}
+
+.title {
+    font-size: 1.75em;
+    padding: 50px;
+    width: 100%
 }
 
 .text {
-    font-size: 1em;
+    font-size: 1.25em;
     padding: 50px;
 }
 
