@@ -8,7 +8,7 @@
 
 nav {
     background-color: #f0f0f0;
-    background: linear-gradient(45deg, #0c1e1f 30%, #4c4b49);
+    background: linear-gradient(45deg, #0c1e1f, #4c4b49);
     color: #f0f0f0;
     padding: 10px 20px;
     display: flex;
@@ -46,6 +46,7 @@ nav a {
 
 nav a:hover {
     color: #818d87;
+    text-decoration: underline;
  }
 
 .icon {
@@ -54,26 +55,37 @@ nav a:hover {
 
 /* Basic CSS for the left navigation bar */
 .nav-left {    
-    width: 200px;
-    height: 100%;
+    width: 50px;
+    background: linear-gradient(#0c1e1f, #4c4b49);    
+    display: flex;
+    height: calc(100% - 74px);
     float: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
- }
- .nav-left li {
+    align-items: flex-end;
+}
+
+.nav-left li {
     display: block;
- }
- .nav-left a {
+    padding: 30px 0;
+}
+
+.nav-left a {
     display: block;
-    color: white;
+    color: #f0f0f0;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 10px;
  }
 
- .nav-left a:hover {
-    background-color: #111;
+.nav-left a:hover {
+    background: #818d87;
+    mix-blend-mode: multiply;
+}
+
+.icon-small {
+    width: 30px;    
 }
   
 /* Basic CSS for the form elements */
@@ -81,9 +93,11 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
+    background-clip: border-box;
     background-attachment: fixed;
     background-size: cover;
     color: #f0f0f0;
+    height: 100vh;
     /* margin: 20px; */
 }
 
@@ -107,7 +121,6 @@ button {
     color: #f0f0f0;
     border: none;
     cursor: pointer;
-    border-radius: 12%;
 }
   
 button:hover {
@@ -138,3 +151,25 @@ h2 {
     width: 200px;
     height: 100px;
 }  
+
+.container {
+    width: 40%;
+    height: calc(100% - 74px);
+    margin: 0 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(42,86,94, .3) 
+}
+
+.title {
+    font-size: 2em;
+    padding: 50px;
+    width: 75%
+}
+
+.text {
+    font-size: 1em;
+    padding: 50px;
+}
+
