@@ -1,0 +1,140 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #f0f0f0;
+    background: linear-gradient(45deg, #0c1e1f 30%, #4c4b49);
+    color: #f0f0f0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 2em;
+}
+
+nav div {
+    display: inline-flex;    
+    align-items: center;
+    margin-bottom: 0;
+}
+  
+nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0px 20px;
+}
+
+nav a:hover {
+    color: #818d87;
+ }
+
+.icon {
+    width: 50px;
+}
+
+/* Basic CSS for the left navigation bar */
+.nav-left {    
+    width: 200px;
+    height: 100%;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ .nav-left li {
+    display: block;
+ }
+ .nav-left a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+
+ .nav-left a:hover {
+    background-color: #111;
+}
+  
+/* Basic CSS for the form elements */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #f0f0f0;
+    /* margin: 20px; */
+}
+
+div {
+    margin-bottom: 10px;
+}
+  
+label {
+    display: inline-block;
+    width: 100px;
+}
+  
+input[type="text"], input[type="number"], select {
+    width: 300px;
+    padding: 5px;
+}
+  
+button {
+    padding: 7px 15px;
+    background-color: #02767a;
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 12%;
+}
+  
+button:hover {
+    background-color: #539ca1;
+}
+  
+/* Basic CSS for the report section */
+h2 {
+    margin-top: 30px;
+}
+  
+#report, #result {
+    padding: 10px;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+#result {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#result img {
+    width: 200px;
+    height: 100px;
+}  
