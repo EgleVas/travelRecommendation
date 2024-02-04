@@ -14,6 +14,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 74px;
 }
 
 nav h1 {
@@ -105,6 +106,12 @@ body {
 div {
     margin-bottom: 20px;
 }
+
+hr {
+    height: .1em;
+    margin: 30px;
+    background-color: #f0f0f0;
+}
   
 label {
     display: inline-block;
@@ -120,6 +127,7 @@ textarea[type="text"] {
     width: 100%;
     padding: 10px;
     font-family: Arial;
+    resize: none;
 }
   
 button {
@@ -137,6 +145,10 @@ button:hover {
 /* Basic CSS for the report section */
 h2 {
     margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
 }
   
 #report, #result {
@@ -160,16 +172,15 @@ h2 {
 }  
 
 .container {
-    height: calc(100% - 74px);    
+    height: calc(100vh - 74px);    
     display: flex;flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .container-left {
     width: 40%;
-    height: calc(100% - 74px);
-    margin: 0 50px;
+    height: calc(100vh - 74px);
+    margin: 0 50px 0 0;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -178,8 +189,8 @@ h2 {
 
 .container-right {
     width: 40%;
-    height: calc(100% - 74px);
-    margin: 0 50px;
+    height: calc(100vh - 74px);
+    margin: 0 50px 0 0;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -198,3 +209,10 @@ h2 {
     padding: 50px;
 }
 
+.text-with-background {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(42,86,94);
+    padding: 10px;
+    font-weight: bold;
+}
