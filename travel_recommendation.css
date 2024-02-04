@@ -153,22 +153,20 @@ h3 {
   
 #report, #result {
     padding: 10px;
-    max-width: 400px;
     word-wrap: break-word;
 }
 
-#result {
-  height: 400px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
+#result {  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 #result img {
-    width: 200px;
-    height: 100px;
+    width: 100%;
 }  
 
 .container {
