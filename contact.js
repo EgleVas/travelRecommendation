@@ -20,7 +20,7 @@ function addForm() {
         resetForm();
         generateReport(messages, reportDiv);
     } else {
-        reportDiv.innerHTML += '<div><h3 class="warning">Please fill all the fields in the form above.</h3></div>';
+        reportDiv.innerHTML += '<div><h3 class="warning">Please fill out all the fields in the form above.</h3></div>';
     }       
 }
 

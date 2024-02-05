@@ -55,12 +55,17 @@ function searchGroup() {
 }
 
 function addItem(item, resultDiv) {
-    const name = item.name;
+    const name = item.name;    
+    const timeZone = item.timeZone
+    const timeOptions = { timeZone: timeZone, hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    const time = new Date().toLocaleTimeString('en-US', timeOptions);
     const description = item.description;
     const imageUrl = item.imageUrl;
     resultDiv.innerHTML += `<h3 style="padding-top: 40px;">${name}</h3>`;
     resultDiv.innerHTML += `<p>${description}</p>`;
     resultDiv.innerHTML += `<img style="width: 100%" src="./images/${imageUrl}" alt="hjh">`;
+    resultDiv.innerHTML += `<p>Current time in ${name}: ${time}</p>`;
+
 }
 
 btnSearch.addEventListener('click', searchGroup);
