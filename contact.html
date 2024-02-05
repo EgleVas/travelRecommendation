@@ -38,19 +38,25 @@
             <div class="text">
                 <div>
                     <label for="name">Name:</label>
-                    <textarea type="text" style="height: 3em;" id="name" placeholder="Enter your name"></textarea>
+                    <textarea type="text" style="height: 3em;" id="name" placeholder="Enter your name" required></textarea>
                 </div>
                 <div>
                     <label>Email:</label>            
-                    <textarea type="text" style="height: 3em;" id="email" placeholder="Enter your email"></textarea>
+                    <textarea type="text" style="height: 3em;" id="email" placeholder="Enter your email" required></textarea>
                 </div>
                 <div>
                     <label>Message:</label>
-                    <textarea type="text" style="height: 10em;" id="message" placeholder="Enter your message"></textarea>
+                    <textarea type="text" style="height: 10em;" id="message" placeholder="Enter your message" required></textarea>
                 </div>
                 <button style="width: 100%;" id='btnSubmitForm'>Submit</button>
             </div>
+            
+            <div class="text" style="margin-bottom: 0">                
+                <div style="margin-bottom: 0" id="report"></div>
+            </div>        
         </div>
     </div>
+
+    <script src="./contact.js"></script>
 </body>
 </html>

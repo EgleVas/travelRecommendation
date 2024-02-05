@@ -53,6 +53,8 @@ nav a:hover {
 
 .icon {
     width: 50px;
+    float: left;
+    margin: 10px;
 }
 
 /* Basic CSS for the left navigation bar */
@@ -171,7 +173,8 @@ h3 {
 
 .container {
     height: calc(100vh - 74px);    
-    display: flex;flex-direction: row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -192,8 +195,9 @@ h3 {
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background: rgba(42,86,94, .3) 
+    justify-content: top;
+    background: rgba(42,86,94, .3);
+    overflow: auto;
 }
 
 .title {
@@ -213,4 +217,9 @@ h3 {
     background-color: rgba(42,86,94);
     padding: 10px;
     font-weight: bold;
+}
+
+.warning {
+    padding-top: 40px;
+    text-align: center;
 }
